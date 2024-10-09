@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28">
+  <g id="calendar" transform="translate(-653 -670)">
+    <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(650.102 669.926)">
+      <path id="Path_8662" data-name="Path 8662" d="M6.585,6H21.177a2.085,2.085,0,0,1,2.085,2.085V22.677a2.085,2.085,0,0,1-2.085,2.085H6.585A2.085,2.085,0,0,1,4.5,22.677V8.085A2.085,2.085,0,0,1,6.585,6Z" transform="translate(0 -0.915)" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8663" data-name="Path 8663" d="M24,3V7.17" transform="translate(-5.95)" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8664" data-name="Path 8664" d="M12,3V7.17" transform="translate(-2.288)" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8665" data-name="Path 8665" d="M4.5,15H23.262" transform="translate(0 -3.661)" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <rect id="Rectangle_247" data-name="Rectangle 247" width="22" height="28" transform="translate(653 670)" fill="none"/>
+  </g>
+</svg>
