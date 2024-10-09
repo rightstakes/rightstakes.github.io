@@ -27,7 +27,7 @@ function showHidePassword() {
             .newPassword_li #password-entry-item4.toggle-hide-password::after, .oldPassword_li #password-entry-item4.toggle-hide-password::after, .reenterPassword_li #password-entry-item4.toggle-hide-password::after
             {
                 content: '';
-                background-image: url("https://cdn.rightstakes.com/azadb2c/aposta1/content/feather-eye-off.svg");
+                background-image: url("https://rightstakes.github.io/azadb2c/aposta1/content/feather-eye-off.svg");
                 background-size: cover;
                 position: relative;
                 bottom: 19px !important;
@@ -49,7 +49,7 @@ function showHidePassword() {
             .newPassword_li #password-entry-item4.toggle-show-password::after, .oldPassword_li #password-entry-item4.toggle-show-password::after, .reenterPassword_li #password-entry-item4.toggle-show-password::after
             {
                 content: '';
-                background-image: url("https://cdn.rightstakes.com/azadb2c/aposta1/content/feather-eye.svg");
+                background-image: url("https://rightstakes.github.io/azadb2c/aposta1/content/feather-eye.svg");
                 background-size: cover;
                 position: relative;
                 bottom: 19px !important;
@@ -80,7 +80,7 @@ function showHidePassword() {
 
             #password-entry-item1.toggle-hide-password::after, #password-entry-item2.toggle-hide-password::after, #password-entry-item3.toggle-hide-password::after, #password-entry-item4.toggle-hide-password::after {
                 content: '';
-                background-image: url("https://cdn.rightstakes.com/azadb2c/aposta1/content/feather-eye-off.svg");
+                background-image: url("https://rightstakes.github.io/azadb2c/aposta1/content/feather-eye-off.svg");
                 background-size: cover;
                 position: relative;
                 top: 41px;
@@ -97,7 +97,7 @@ function showHidePassword() {
 
             #password-entry-item1.toggle-show-password::after, #password-entry-item2.toggle-show-password::after, #password-entry-item3.toggle-show-password::after, #password-entry-item4.toggle-show-password::after {
                 content: '';
-                background-image: url("https://cdn.rightstakes.com/azadb2c/aposta1/content/feather-eye.svg");
+                background-image: url("https://rightstakes.github.io/azadb2c/aposta1/content/feather-eye.svg");
                 background-size: cover;
                 position: relative;
                 top: 41px;
