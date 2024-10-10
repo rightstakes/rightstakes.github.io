@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="username" transform="translate(-536.2 -365.188)">
+    <g id="Icon_feather-user" data-name="Icon feather-user" transform="translate(535.2 364.688)">
+      <path id="Path_7449" data-name="Path 7449" d="M21.641,28.365V26.41a3.91,3.91,0,0,0-3.91-3.91H9.91A3.91,3.91,0,0,0,6,26.41v1.955" transform="translate(0 -6.269)" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_7450" data-name="Path 7450" d="M19.821,8.41A3.91,3.91,0,1,1,15.91,4.5,3.91,3.91,0,0,1,19.821,8.41Z" transform="translate(-2.09)" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <rect id="Rectangle_250" data-name="Rectangle 250" width="25" height="25" transform="translate(536.2 365.188)" fill="none"/>
+  </g>
+</svg>

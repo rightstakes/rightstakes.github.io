@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="28" viewBox="0 0 22 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_39980" data-name="Rectangle 39980" width="22" height="28" transform="translate(-8493 -4274)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="bonus-code" transform="translate(8493 4274)" clip-path="url(#clip-path)">
+    <g id="_x33_8_Badge" transform="translate(-8492 -4273.6)">
+      <g id="Group_108846" data-name="Group 108846" transform="translate(-0.138)">
+        <path id="Path_202629" data-name="Path 202629" d="M91.367,30.215,88.7,34.5a.477.477,0,0,0,.578.688l3.368-1.25.61,3.582a.477.477,0,0,0,.882.161l2.092-3.305,1.419,2.849a.477.477,0,0,0,.885-.187l.43-3.72,3.534,1.409a.477.477,0,0,0,.587-.685L101.1,30.233a10.571,10.571,0,1,0-9.736-.018Zm2.61,5.853-.487-2.857a.477.477,0,0,0-.636-.367L90.2,33.83l2.036-3.209a10.481,10.481,0,0,0,2.155.628l1.287,2.186Zm7.58-2.743L98.74,32.2a.477.477,0,0,0-.651.388l-.339,2.926-2.169-4.123a10.467,10.467,0,0,0,4.65-.757Zm-5.3-22.092a9.615,9.615,0,1,1-9.618,9.611A9.622,9.622,0,0,1,96.254,11.233Z" transform="translate(-85.682 -10.279)" fill="#8d8d8d"/>
+        <g id="discount" transform="translate(5.095 4.619)">
+          <path id="Path_202632" data-name="Path 202632" d="M37.058,39.076a2.018,2.018,0,1,1,2.018-2.018A2.018,2.018,0,0,1,37.058,39.076Zm0-3.234a.505.505,0,1,0,0-.01Z" transform="translate(-35.04 -35.04)" fill="#8d8d8d" stroke="#8d8d8d" stroke-width="0.2"/>
+          <path id="Path_202633" data-name="Path 202633" d="M74.83,76.856a2.02,2.02,0,1,1,1.434-.592A2.018,2.018,0,0,1,74.83,76.856Zm0-3.234a.5.5,0,1,0,0-.01Z" transform="translate(-65.264 -65.264)" fill="#8d8d8d" stroke="#8d8d8d" stroke-width="0.2"/>
+          <path id="Path_202634" data-name="Path 202634" d="M38.147,48.247a.4.4,0,0,1-.282-.682l9.7-9.7a.4.4,0,0,1,.566.566l-9.706,9.7A.4.4,0,0,1,38.147,48.247Z" transform="translate(-37.207 -37.203)" fill="#8d8d8d" stroke="#8d8d8d" stroke-width="0.2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

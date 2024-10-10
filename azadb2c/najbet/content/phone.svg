@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28">
+  <g id="phone" transform="translate(-652 -752)">
+    <g id="Icon_feather-smartphone" data-name="Icon feather-smartphone" transform="translate(646.334 749.664)">
+      <path id="Path_8666" data-name="Path 8666" d="M9.732,3H20.889a2.349,2.349,0,0,1,2.232,2.451V25.06a2.349,2.349,0,0,1-2.232,2.451H9.732A2.349,2.349,0,0,1,7.5,25.06V5.451A2.349,2.349,0,0,1,9.732,3Z" transform="translate(1.166 1.08)" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_8667" data-name="Path 8667" d="M18,27h0" transform="translate(-1.524 -3.582)" fill="none" stroke="#8d8d8d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <rect id="Rectangle_248" data-name="Rectangle 248" width="22" height="28" transform="translate(652 752)" fill="none"/>
+  </g>
+</svg>

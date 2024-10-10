@@ -1,0 +1,1927 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://rightstakes.github.io/azadb2c/najbet/content/favicon.ico"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://rightstakes.github.io/azadb2c/najbet/content/jquery.inputmask.min.js"></script>
+    <script src="https://rightstakes.github.io/azadb2c/najbet/content/jquery.passwordRequirements.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/google-libphonenumber/3.2.34/libphonenumber.min.js"></script>
+    
+    <link
+      href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://rightstakes.github.io/azadb2c/najbet/content/jquery.passwordRequirements.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+    <style id="common">
+      @font-face {
+        font-family: "SegoeUI";
+        src: url(https://login.microsoftonline.com/templates/src/fonts/segoeui.WOFF);
+        font-weight: normal;
+      }
+
+      @font-face {
+        font-family: "SegoeUI";
+        src: url(https://login.microsoftonline.com/templates/src/fonts/segoeui_bold.WOFF);
+        font-weight: bold;
+      }
+
+      #AmazonExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/amazon.svg);
+      }
+
+      #AmazonExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/amazon.svg);
+      }
+
+      #FacebookExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/facebook.svg);
+      }
+
+      #FacebookExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/facebook.svg);
+      }
+
+      #GitHubExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/github.svg);
+      }
+
+      #GitHubExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/github.svg);
+      }
+
+      #AppleExchange,
+      #AppleManagedExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/apple.svg);
+      }
+
+      #AppleExchange:hover,
+      #AppleManagedExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/apple.svg);
+      }
+
+      #GoogleExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/google.svg);
+      }
+
+      #GoogleExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/google.svg);
+      }
+
+      #LinkedInExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/linkedin.svg);
+      }
+
+      #LinkedInExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/linkedin.svg);
+      }
+
+      #MicrosoftAccountExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/microsoft.svg);
+      }
+
+      #MicrosoftAccountExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/microsoft.svg);
+      }
+
+      #QQExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/qq.svg);
+      }
+
+      #QQExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/qq.svg);
+      }
+
+      #TwitterExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/twitter.svg);
+      }
+
+      #TwitterExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/twitter.svg);
+      }
+
+      #WeChatExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/wechat.svg);
+      }
+
+      #WeChatExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/wechat.svg);
+      }
+
+      #WeiboExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/weibo.svg);
+      }
+
+      #WeiboExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/weibo.svg);
+      }
+
+      #email {
+        background-image: url("https://rightstakes.github.io/azadb2c/najbet/content/email.svg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 18px 23px;
+        background-position: 3% 50%;
+        cursor: auto;
+        padding-left: 25px;
+      }
+      #newPassword {
+        background-image: url("https://rightstakes.github.io/azadb2c/najbet/content/password.svg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 18px 23px;
+        background-position: 3% 50%;
+        cursor: auto;
+        padding-left: 25px;
+      }
+      #oldPassword {
+        background-image: url("https://rightstakes.github.io/azadb2c/najbet/content/password.svg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 18px 23px;
+        background-position: 3% 50%;
+        cursor: auto;
+        padding-left: 25px;
+      }
+      #reenterPassword {
+        background-image: url("https://rightstakes.github.io/azadb2c/najbet/content/password.svg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 18px 23px;
+        background-position: 3% 50%;
+        cursor: auto;
+        padding-left: 25px;
+      }
+
+      #givenName {
+        background-image: url("https://rightstakes.github.io/azadb2c/najbet/content/first-name.svg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 18px 23px;
+        background-position: 3% 50%;
+        cursor: auto;
+        padding-left: 25px;
+      }
+
+      #surname {
+        background-image: url("https://rightstakes.github.io/azadb2c/najbet/content/last-name.svg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 18px 23px;
+        background-position: 3% 50%;
+        cursor: auto;
+        padding-left: 25px;
+      }
+
+      #dateOfBirth {
+        background-image: url("https://rightstakes.github.io/azadb2c/najbet/content/calendar.svg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 18px 23px;
+        background-position: 3% 50%;
+        cursor: auto;
+        padding-left: 25px;
+      }
+
+      #phone {
+        background-image: url("https://rightstakes.github.io/azadb2c/najbet/content/phone.svg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 18px 23px;
+        background-position: 3% 50%;
+        cursor: auto;
+        padding-left: 25px;
+      }
+
+      #personalId {
+        background-image: url("https://rightstakes.github.io/azadb2c/najbet/content/id-num.svg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 18px 23px;
+        background-position: 3% 50%;
+        cursor: auto;
+        padding-left: 25px;
+      }
+      
+      #bonus_code {
+        background-image: url("https://rightstakes.github.io/azadb2c/najbet/content/bonus-code.svg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 18px 23px;
+        background-position: 3% 50%;
+        cursor: auto;
+        padding-left: 25px;
+      }
+      .cancel {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+      }
+	  
+	  #email_ver_but_edit {
+		 display: none !important;
+	  }
+    </style>
+    <style id="idpselector">
+      #SignInWithLogonNameExchange,
+      #SignUpWithLogonEmailExchange,
+      #SignUpWithLogonNameExchange {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/local.svg);
+      }
+
+      #SignInWithLogonNameExchange:hover,
+      #SignUpWithLogonEmailExchange:hover,
+      #SignUpWithLogonNameExchange:hover {
+        background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/local.svg);
+      }
+
+      #SignUpWithLogonEmailExchange.text-link {
+        background-image: none;
+        background-color: transparent !important;
+      }
+
+      #SignUpWithLogonEmailExchange.text-link:hover {
+        background-image: none;
+        background-color: transparent !important;
+      }
+    </style>
+
+    <style>
+      /* Following are generated styles via gulp. */
+      /* inject: css */
+      html {
+        background: 0 0;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        background-attachment: fixed;
+        background-color: #fff;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: left;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      a:focus {
+        outline: 0;
+      }
+
+      input,
+      select {
+        border: 1px solid #dddddd;
+      }
+
+      input::placeholder {
+        color: #6a6a6a;
+      }
+
+      #background_branding_container img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      img[data-tenant-branding-background="true"] {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        position: fixed;
+        left: 0;
+        overflow: hidden;
+        top: 0;
+      }
+
+      div[data-tenant-branding-background-color="true"] {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 0;
+        background: rgb(59,29,163);
+        background: linear-gradient(180deg, rgba(59,29,163,1) 0%, rgba(121,79,214,1) 100%) !important;
+      }
+
+      .container {
+        text-align: center;
+        width: 100%;
+        display: table;
+        height: 100vh;
+        padding: 0;
+      }
+
+      #api {
+        margin: 0 auto;
+      }
+        .container {
+            max-width: 1500px;
+        }
+      .col-lg-6 {
+        max-width: 600px;
+        width: 100%;
+        /*float: none;*/
+        display: inline-block;
+        vertical-align: top;
+        padding: 0;
+      }
+
+      .row {
+        width: 100%;
+        margin: 0;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      #simplemodal-container .simplemodal-data {
+        padding: 5px 8px;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 3px;
+        font-style: italic;
+      }
+
+      #LocalAccountSigninEmailExchange,
+      #LocalAccountSigninUsernameExchange,
+      #SignInWithLogonEmailExchange,
+      #SignInWithLogonNameExchange,
+      #SignUpWithLogonEmailExchange,
+      #SignUpWithLogonNameExchange {
+        background-color: #296ec6;
+        background-image: url(none);
+        background-size: 10%;
+        background-position-x: 95%;
+        background-position-y: 50%;
+        background-repeat: no-repeat;
+        border-radius: 0.5rem;
+        width: 100%;
+        width: 100%;
+        font-size: 1em;
+        margin-left: auto;
+      }
+
+      #LocalAccountSigninEmailExchange:hover,
+      #LocalAccountSigninUsernameExchange:hover,
+      #SignInWithLogonEmailExchange:hover,
+      #SignInWithLogonNameExchange:hover,
+      #SignUpWithLogonEmailExchange:hover,
+      #SignUpWithLogonNameExchange:hover {
+        background-color: #1662c7 !important;
+      }
+
+      #AmazonExchange:hover {
+        background-color: #36474f !important;
+      }
+
+      #FacebookExchange:hover {
+        background-color: #3b5595 !important;
+      }
+
+      #GitHubExchange:hover {
+        background-color: #0f0f0f !important;
+      }
+
+      #AppleExchange:hover,
+      #AppleManagedExchange:hover {
+        background-color: #0f0f0f !important;
+      }
+
+      #GoogleExchange:hover {
+        background-color: #c64a29 !important;
+      }
+
+      #LinkedInExchange:hover {
+        background-color: #0274b3 !important;
+      }
+
+      #MicrosoftAccountExchange:hover {
+        background-color: #01a4ef !important;
+      }
+
+      #QQExchange:hover {
+        background-color: #1a97df !important;
+      }
+
+      #TwitterExchange:hover {
+        background-color: #1da1f2 !important;
+      }
+
+      #WeChatExchange:hover {
+        background-color: #4cc522 !important;
+      }
+
+      #WeiboExchange:hover {
+        background-color: #e81123 !important;
+      }
+
+      .buttons button {
+        margin: 0 auto;
+        width: 100% !important;
+        height: 60px !important;
+        border-radius: 15px !important;
+        color: #fff !important;
+        font-size: 1.5em;
+        margin-top: 10px;
+        background: #3ca94a !important;
+        box-shadow: 0.69px 4px 15px #00000026;
+        opacity: 1;
+        border: none;
+        min-width: 250px;
+        text-transform: uppercase;
+      }
+
+      .buttons button:hover {
+        background: #3A0045;
+      }
+
+      .buttons button[aria-disabled="true"] {
+        opacity: 0.3;
+      }
+
+      .buttons button:not([aria-disabled="true"]) {
+        opacity: 1;
+      }
+
+        #email_ver_but_send {
+            margin: 0 auto;
+            width: 100%;
+            height: 65px;
+            border-radius: 0.5rem;
+            color: #fff;
+            font-size: 1.5em;
+            margin-top: 10px;
+            background: #3ca94a;
+            box-shadow: 0.69px 4px 15px #00000026;
+            opacity: 1;
+            border: none;
+        }
+            #email_ver_but_send:hover {
+                background: #3A0045;
+            }
+      #attributeList ul {
+        padding: 0;
+      }
+
+      #attributeList ul li {
+        list-style: none;
+        margin: 10px 0;
+        font-size: 16px;
+      }
+
+      label {
+        font-weight: 600;
+      }
+
+      #attributeList ul li label {
+        display: block;
+        text-align: left;
+        float: none;
+      }
+
+      #attributeList ul li.EmailBox label,
+      #attributeList ul li.Password label,
+      #attributeList ul li.TextBox label {
+        display: none !important;
+      }
+
+      #attributeList ul li label[for="country"] {
+        float: left;
+        display: inline-block !important;
+        margin-bottom: 0.5rem;
+      }
+
+      #attributeList ul li label[for="cpiminternal_legalCountry"] {
+        float: none;
+        display: block !important;
+        text-align: left;
+        margin-bottom: 0.5rem;
+      }
+
+      #attributeList ul li label[for="cpiminternal_dateOfBirth"] {
+        float: none;
+        text-align: left;
+        display: block !important;
+        margin-bottom: 0.5rem;
+      }
+
+      #attributeList ul li input {
+        height: 55px;
+        letter-spacing: 2px;
+        width: 100%;
+        border-radius: 10px;
+        text-indent: 20px;
+      }
+
+      #attributeList ul li input::-webkit-input-placeholder {
+        text-indent: 20px;
+      }
+
+      #attributeList ul li .attrEntry.validate input.invalid,
+      #attributeList ul li .attrEntry.validate input:invalid {
+        border: 1px solid #b00;
+      }
+
+      #attributeList ul li .attrEntry .verify {
+        margin-top: 2rem;
+        padding-bottom: 10px;
+        position: relative;
+      }
+
+      #attributeList ul li .attrEntry .verificationControlContent .buttons {
+        margin-top: 2rem;
+        padding-bottom: 10px;
+        position: relative;
+      }
+
+      #attributeList ul li .attrEntry .verify .sendButton[id$="ver_but_send"] {
+        width: 60%;
+        height: 50px;
+        background-color: #296ec6;
+        color: #fff;
+        border-radius: 0.5rem;
+      }
+
+      #attributeList ul li .attrEntry .verificationControlContent .sendCode {
+        width: 60%;
+        height: 50px;
+        background-color: #296ec6;
+        color: #fff;
+        border-radius: 0.5rem;
+      }
+
+      #attributeList
+        ul
+        li
+        .attrEntry
+        .verify
+        .sendButton[id$="ver_but_send"]:hover {
+        background-color: #1662c7;
+      }
+
+      #attributeList
+        ul
+        li
+        .attrEntry
+        .verificationControlContent
+        .sendCode:hover {
+        background-color: #1662c7;
+      }
+
+      @media screen and (-ms-high-contrast: active) {
+        #attributeList ul li .attrEntry .verify button,
+        .buttons #continue {
+          border: 1px dashed #fff !important;
+        }
+
+        #attributeList ul li .attrEntry .verify button:hover,
+        .buttons #continue:hover {
+          border: 1px solid #fff !important;
+        }
+      }
+
+      #attributeList ul li .attrEntry .verify .verifyButton {
+        width: inherit;
+        padding: 0 20px;
+        height: 50px;
+        background-color: #296ec6;
+        color: #fff;
+        margin-right: 5px;
+        border-radius: 0.5rem;
+      }
+
+      #attributeList ul li .attrEntry .verificationControlContent .verifyCode {
+        width: inherit;
+        padding: 0 20px;
+        height: 50px;
+        background-color: #296ec6;
+        color: #fff;
+        margin-right: 5px;
+        border-radius: 0.5rem;
+      }
+
+      #attributeList ul li .attrEntry .verify .verifyButton:hover {
+        background-color: #1662c7;
+      }
+
+      #attributeList
+        ul
+        li
+        .attrEntry
+        .verificationControlContent
+        .verifyCode:hover {
+        background-color: #1662c7;
+      }
+
+        #attributeList
+        ul
+        li
+        .attrEntry
+        .verify
+        .sendButton[id$="ver_but_resend"] {
+            width: inherit;
+            padding: 0 20px;
+            border: 0;
+            font-size: 1.2em !important;
+            height: auto !important;
+            right: 0;
+            bottom: -38px;
+            background-color: transparent !important;
+            color: #f0be19 !important;
+            border-radius: 0 !important;
+            box-shadow: none;
+        }
+        #emailVerificationSSPRControl_but_send_new_code, #emailVerificationSSPRControlLoggedInUser_but_send_new_code{
+          width: inherit;
+            padding: 0 20px;
+            border: 0;
+            font-size: 1.2em !important;
+            height: auto !important;
+            right: 0;
+            bottom: -38px;
+            background-color: transparent !important;
+            color: #f0be19 !important;
+            border-radius: 0 !important;
+            box-shadow: none;
+            margin-top: 20px;
+        }
+        .moveContinueButton{
+          position: relative;
+          top:-35px;
+        }
+        #emailVerificationSSPRControl_but_change_claims{
+            width: inherit;
+            padding: 0 20px;
+            border: 0;
+            font-size: 1em !important;
+            /*height: auto !important;*/
+            right: 0;
+            bottom: -38px;
+            background-color: transparent !important;
+            color: #f0be19 !important;
+            border-radius: 0 !important;
+            box-shadow: none;
+            position: absolute;
+            left: 0;
+            top: 45px;
+            height: 30px;
+            display: none !important;
+        }
+        
+      #attributeList ul li .attrEntry .verificationControlContent .sendNewCode {
+        width: inherit;
+        padding: 0 20px;
+        border: 0;
+        font-size: 1em;
+        height: 50px;
+        right: 0;
+        bottom: -38px;
+        background-color: #296ec6;
+        color: #fff;
+        border-radius: 0.5rem;
+      }
+      #emailVerificationSSPRControl_but_change_claims{
+        display: none !important;
+      }
+      #attributeList
+        ul
+        li
+        .attrEntry
+        .verify
+        .sendButton[id$="ver_but_resend"]:hover {
+        background-color: #1662c7;
+      }
+
+      #attributeList
+        ul
+        li
+        .attrEntry
+        .verificationControlContent
+        .sendNewCode:hover {
+        background-color: #1662c7;
+      }
+
+      #attributeList ul li .attrEntry .verify .editButton {
+        border: none;
+        color: #fff;
+        background-color: #296ec6;
+        width: 60%;
+        height: 50px;
+        border-radius: 0.5rem;
+      }
+
+      #attributeList
+        ul
+        li
+        .attrEntry
+        .verificationControlContent
+        .changeClaims {
+        border: none;
+        color: #fff;
+        background-color: #296ec6;
+        width: 60%;
+        height: 50px;
+        border-radius: 0.5rem;
+      }
+
+      #attributeList ul li .attrEntry .verify .editButton:hover {
+        background-color: #1662c7;
+      }
+
+      #attributeList
+        ul
+        li
+        .attrEntry
+        .verificationControlContent
+        .changeClaims:hover {
+        background-color: #1662c7;
+      }
+
+      #attributeList ul li .attrEntry .verify #email_ver_input_label {
+        display: none !important;
+      }
+
+      #api .working {
+        background: url(data:image/gif;base64,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)
+          no-repeat;
+        height: 30px;
+        width: auto;
+        background-position: center bottom;
+      }
+
+      #attributeList ul li .attrEntry .itemLevel {
+        display: none;
+      }
+
+      input[type="email"],
+      input[type="password"],
+      input[type="text"] {
+        -webkit-appearance: none;
+      }
+
+      #attributeList ul li .attrEntry .dropdown_single {
+        height: 45px;
+        border-radius: 0.5rem;
+        width: 100%;
+        padding-left: 15px;
+      }
+
+      #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date {
+        display: table;
+        width: 100%;
+      }
+
+      #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select {
+        border-radius: 0.5rem;
+        display: inline-block;
+        height: 50px;
+        padding-left: 15px;
+      }
+
+      #attributeList
+        ul
+        li
+        .attrEntry
+        div#cpiminternal_dateOfBirth
+        select#cpiminternal_dateOfBirth_day.day {
+        margin-right: 3%;
+        width: 23%;
+      }
+
+      #attributeList
+        ul
+        li
+        .attrEntry
+        div#cpiminternal_dateOfBirth
+        select#cpiminternal_dateOfBirth_month.month {
+        margin-right: 3%;
+        width: 38%;
+      }
+
+      #attributeList
+        ul
+        li
+        .attrEntry
+        div#cpiminternal_dateOfBirth
+        select#cpiminternal_dateOfBirth_year.year {
+        width: 33%;
+      }
+
+      #attributeList ul li .helpLink {
+        display: none;
+      }
+
+      #attributeVerification .buttons {
+        margin-top: 10px;
+      }
+
+      @media screen and (max-width: 100%) {
+        .row .panel-default .panel-body {
+          margin-top: 40px;
+        }
+
+        .row .panel-default .panel-body .branding img {
+          display: block;
+          height: 80px;
+          width: auto;
+          margin: 0 auto;
+        }
+
+        .row .panel-default .panel-body .branding h1 {
+          display: none;
+        }
+
+        .row .panel-default .panel-body h3 {
+          font-size: 1.5em;
+          margin-top: 15px;
+        }
+
+        #attributeVerification #attributeList ul li input {
+          width: 60%;
+          height: 40px;
+          border-radius: 0.5rem;
+          border: 1px solid #dddddd;
+          text-indent: 10px;
+        }
+
+        #attributeVerification
+          #attributeList
+          ul
+          li
+          input::-webkit-input-placeholder {
+          text-indent: 10px;
+        }
+
+        #attributeVerification #attributeList ul li #email {
+          width: 65%;
+          float: left;
+          position: relative;
+          z-index: 2;
+        }
+
+        #attributeVerification #attributeList ul li #email_ver_but_verify {
+          background: 0 0;
+          border: 0;
+          color: #496ad8;
+          font-size: 1em;
+          position: relative;
+          right: 0;
+          top: 60px;
+          font-size: 1.1em;
+          width: auto;
+          z-index: 1;
+          height: 20px;
+        }
+
+        #attributeVerification #attributeList ul li #email_ver_input {
+          min-width: 50%;
+          width: 60%;
+          float: left;
+        }
+
+        #attributeVerification #attributeList ul li #email_ver_but_resend {
+          top: 10px;
+          font-size: 1.1em;
+          height: 20px;
+        }
+
+        #attributeVerification #attributeList ul li .attrEntry #email {
+          height: 40px;
+        }
+
+        #attributeVerification
+          #attributeList
+          ul
+          li
+          .attrEntry
+          .verify
+          #email_ver_but_send:after {
+          content: " Verify";
+          font-size: 1.1em;
+          font-style: bold;
+          margin-left: 40%;
+        }
+
+        #attributeVerification
+          #attributeList
+          ul
+          li
+          .attrEntry
+          .verify
+          #email_ver_but_send {
+          height: 40px;
+          width: auto;
+          float: right;
+          overflow: hidden;
+          text-indent: -200px;
+        }
+
+        #attributeVerification
+          #attributeList
+          ul
+          li
+          .attrEntry
+          .verify
+          #email_ver_but_edit {
+          margin-bottom: 15px;
+          border: none;
+          color: #fff;
+          background-color: #496ad8;
+          border-radius: 0.5rem;
+          font-size: 1em;
+          box-shadow: 0 0 40px 2px #dae1f7;
+          width: 30%;
+          height: 40px;
+          overflow: hidden;
+          padding-top: 6px;
+          margin-left: 40%;
+        }
+
+        #attributeVerification #attributeList ul li .attrEntry .verify:after {
+          content: " ";
+          display: block;
+          clear: both;
+        }
+
+        #attributeVerification #attributeList #verifying_blurb {
+          margin-top: 15px;
+        }
+
+        #attributeVerification .buttons #continue {
+          height: 40px;
+        }
+        /*#attributeVerification .buttons #cancel {
+          font-size: 1em;
+          left: 40%;
+        }*/
+      }
+
+      .panel,
+      .panel_layout,
+      .panel_layout_row,
+      body,
+      html {
+        height: 100%;
+        border-radius: 0;
+      }
+
+      @media only screen and (max-width: 600px) {
+        img[data-tenant-branding-background="true"] {
+          display: none;
+        }
+
+        .container {
+          background-color: #fff;
+        }
+
+        .container .row .panel-default {
+          border-radius: 0;
+          border: none;
+          box-shadow: none;
+        }
+      }
+      /* endinject */
+    </style>
+
+    <style>
+      /* Following are generated styles via gulp. */
+      /* inject: css */
+      .self_asserted_container .row .panel-default {
+        padding: 80px 40px 40px;
+        margin: 20px auto;
+        background:transparent linear-gradient(180deg, #FFFFFF 0%, #F4E5F7 100%) 0% 0% no-repeat padding-box;
+        border-radius: 30px;
+        border:10px solid rgba(59,29,163,.3);
+        height: auto;
+        width:100%;
+        max-width:600px;
+        position:relative;
+        box-shadow: 0 0 30px rgba(0,0,0.30%);
+      }
+
+      .self_asserted_container .row .panel-default .panel-body {
+        margin: 0 auto;
+        max-width: 100%;
+        width: auto;
+        padding: 0;
+      }
+
+      .self_asserted_container .row .panel-default .panel-body img.companyLogo {
+        display: block;
+        position: absolute;
+        top: -65px;
+        left: calc(50% - 64px);
+        height: 150px;
+      }
+
+      .self_asserted_container .row .panel-default .panel-body .branding h1 {
+        font-size: 1.5em;
+        color: #505050;
+      }
+
+      .self_asserted_container .row .panel-default .panel-body h3 {
+        font-size: 1.5em;
+        color: #505050;
+        margin-top: 5px;
+        margin-bottom: 30px;
+      }
+
+      .self_asserted_container .row .panel-default .panel-body .intro {
+        display: none;
+        text-align: left;
+        margin-top: 2rem;
+      }
+
+      .self_asserted_container
+        .row
+        .panel-default
+        .panel-body
+        #api
+        #attributeVerification
+        .pageLevel {
+        color: #b00;
+        text-align: left;
+      }
+
+      .self_asserted_container
+        .row
+        .panel-default
+        .panel-body
+        #api
+        #attributeVerification
+        .error {
+        color: #b00;
+        text-align: left;
+        margin-bottom: 5px;
+      }
+
+      .errorText {
+        border: none;
+        padding: 0;
+        background: 0 0;
+        color: #a61e0c;
+      }
+
+      .self_asserted_container
+        .row
+        .panel-default
+        .panel-body
+        #api
+        .verifying-modal {
+        display: none;
+        margin-top: 10px;
+      }
+
+      #attributeVerification #attributeList ul {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #attributeVerification #attributeList ul li input {
+        width: 100%;
+      }
+
+      #attributeVerification #attributeList ul li input:invalid {
+        outline: unset;
+      }
+
+      #attributeVerification #attributeList ul li .helpText {
+        display: none;
+        color: #a61e0c;
+        text-align: justify;
+      }
+
+      #attributeVerification
+        #attributeList
+        ul
+        li
+        #email_success.verificationSuccessText {
+        float: left;
+      }
+
+      #attributeVerification #attributeList ul li #email_info {
+        float: left;
+      }
+
+      #attributeVerification
+        #attributeList
+        ul
+        li
+        .attrEntry.validate
+        #email_fail_retry {
+        float: left;
+      }
+
+      #attributeVerification
+        #attributeList
+        ul
+        li
+        .attrEntry.validate
+        #email_fail_server {
+        float: left;
+        text-align: left;
+      }
+
+      #attributeVerification #attributeList ul li #email_fail_no_retry {
+        float: left;
+      }
+
+      div#email_intro {
+        width: 100%;
+        float: left;
+        text-align: left;
+      }
+
+      div#email_info {
+        text-align: left;
+      }
+
+      #attributeVerification #attributeList ul li input[type="checkbox"],
+      #attributeVerification #attributeList ul li input[type="radio"] {
+        width: 24px !important;
+        box-shadow: none;
+        height: 24px;
+        display: inline-block;
+        float: left;
+        clear: left;
+        margin: 0.5rem;
+      }
+
+      #attributeVerification
+        #attributeList
+        ul
+        li
+        input[type="checkbox"].invalid {
+        border: none;
+      }
+
+      #attributeList ul li input[type="checkbox"] + label {
+        float: left;
+        display: inline-block !important;
+        margin: 0.8rem 0 0 0.8rem;
+        font-weight: 400;
+      }
+
+      #attributeList ul li input[type="checkbox"] {
+        border: none;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        font-size: 20px;
+        margin: 0;
+        display: inline-block;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: 0;
+        text-indent: 0;
+      }
+
+      #attributeVerification #attributeList ul li input[type="checkbox"]:focus {
+        box-shadow: 0 0 0 2px #000;
+        border-radius: 0.2rem;
+      }
+
+      #attributeList ul li input[type="checkbox"]:after {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: 1;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #605e5c;
+        border-radius: 2px;
+      }
+
+      #attributeList ul li input[type="checkbox"]:before {
+        background: #00f;
+        background-size: 10px 8px;
+        background-repeat: no-repeat;
+        background-position: 3px 4px;
+        position: absolute;
+        left: 2px;
+        z-index: 2;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        color: #f6ac4f;
+      }
+
+      #attributeList ul li input[type="checkbox"]:checked:after {
+        content: "\2713";
+        position: absolute;
+        box-sizing: border-box;
+        padding-left: 4px;
+        line-height: 23px;
+        color: #fff;
+        background-color: #296ec6;
+        top: 0;
+        opacity: 1;
+        left: 0;
+        border: 1px solid #296ec6;
+        border-radius: 2px;
+      }
+
+      #attributeList ul li input[type="radio"] + label {
+        float: left;
+        display: inline-block !important;
+        margin: 0.5rem;
+        font-weight: 400;
+      }
+
+      #attributeList ul li input[type="radio"] {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #dedede;
+        border-radius: 50%;
+        background-color: #fff;
+        outline: 0;
+      }
+
+      #attributeVerification #attributeList ul li input[type="radio"]:focus {
+        box-shadow: 0 0 0 3px #000;
+      }
+
+      #attributeList ul li input[type="radio"]:checked {
+        background-color: #296ec6;
+        border: 1px solid #296ec6;
+      }
+
+      .attrEntry .verificationInfoText {
+        margin-bottom: 5px;
+      }
+
+      #attributeList ul li .attrEntry select:hover {
+        border-color: #888;
+      }
+
+      #attributeList ul li .attrEntry select option {
+        font-weight: 400;
+      }
+
+      .disclaimer-container {
+        text-align: left;
+        font-size: 10px;
+      }
+
+      .disclaimer-container .disclaimer-link {
+        display: block;
+        width: fit-content;
+      }
+
+      .disclaimer-container-page-level {
+        margin-top: 10px;
+      }
+
+      #attributeList ul li .buttons.verify label {
+        float: left;
+      }
+
+      /* endinject */
+
+      .popup-outer {
+        background: transparent
+          linear-gradient(180deg, #500A5D 0%, #A23FB4 100%) 0% 0% no-repeat
+          padding-box;
+        width: 500px;
+        margin: 0 auto;
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 0 0 40px rgba(0,0,0,0.5);
+      }
+
+      .cancel-popup-top-bg {
+        background: url("https://rightstakes.github.io/azadb2c/najbet/content/coins.svg");
+        display: block;
+        background-size: cover;
+        height: 300px;
+        margin: 0 0 50px 0;
+      }
+
+      .cancel-content {
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      .cancel-content h2 {
+        font-size: 36px;
+        margin: 0 0 20px;
+        font-weight: 700;
+      }
+
+      .cancel-content h4 {
+        font-size: 24px;
+        margin: 0 0 20px;
+        font-weight: 500;
+      }
+
+      .continue-btn {
+        background: #3ca94a 0% 0% no-repeat padding-box;
+        border-radius: 15px;
+        opacity: 1;
+        color: #ffffff;
+        margin: 15px auto;
+        font-size: 18px;
+        width: 60%;
+        height: 50px;
+        line-height: 50px;
+        display: inline-block;
+        text-decoration: none;
+        border: none;
+      }
+
+      .take-me-out a {
+        color: #f39d05;
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: none;
+        margin-bottom: 20px;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      #cancel-modal .modal-dialog-outer {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+        .reg-left-img{
+            height:100vh;
+            display:flex;
+            align-items:center;
+        }
+        .reg-left-img img{
+            width:120%;
+            position:relative;
+            right:10%;
+        }
+        .reg-right-img {
+            height: 100vh;
+            /*display: flex;
+            align-items: end;*/
+            position:relative;
+        }
+            .reg-right-img .img-right {
+               position:absolute;
+               bottom:0;
+            }
+        .reg-right-img img {
+            width: 100%;
+        }
+        .form-container-outer{
+            display:flex;
+            min-height:100vh;
+            align-items:center;
+        }
+        .companyLogo-desktop{
+            display:inline-block;
+        }
+        .companyLogo-mobile{
+            display:none !important;
+        }
+        .forgot-password .reg-left-img{
+            visibility:hidden;
+        }
+        .forgot-password .reg-right-img {
+            visibility: hidden;
+        }
+        .bonus_code_li{
+          position: relative;
+        }
+        .bonus_code_li .close-bonus-btn{
+          position: absolute;
+          right: 1px;
+          background: linear-gradient(90deg, #f5f5f5, #ffffff);;
+          width: 34px;
+          height: 53px;
+          border-radius: 0 9px 9px 0;
+          line-height: 52px;
+          top: 1px;
+          color: #555555;
+          cursor: pointer;
+          text-align: center;
+        }
+        .newlink{
+          cursor: pointer;
+          color: #E0993A;
+        }
+        .buttons button{
+            margin-top: 0;
+          }
+        @media only screen and (max-width: 767px) {
+          .buttons button{
+            margin-top: 0;
+          }
+            .companyLogo-desktop {
+                display: none !important;
+            }
+
+            .companyLogo-mobile {
+                display: inline-block !important;
+                height:90px !important;
+                margin: 0 0 10px 0;
+                left: calc(50% - 38px) !important;
+                top: -32px !important;
+            }
+        .self_asserted_container .row .panel-default {
+          padding: 50px 20px 20px;
+          margin: 20px auto;
+          max-width:450px;
+          border-radius: 20px;
+          border:5px solid rgba(59,29,163,.3);
+        }
+            .form-container-outer {
+                display: block;
+                min-height: auto;
+                text-align: left;
+            }
+            #attributeList ul li {
+              margin: 7px 0;
+            }
+            #attributeList ul li input{
+              letter-spacing: 0px;
+            }
+        .popup-outer {
+          width: auto;
+          margin: 0 auto;
+          border-radius: 20px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          overflow: hidden;
+        }
+            .reg-left-img {
+                height: auto;
+                display: block;
+                align-items: center;
+            }
+                .reg-left-img .img-left {
+                    position: relative;
+                    max-width: 450px;
+                    width: 100%;
+                    padding: 40px 0 0 0;
+                    margin:0 auto;
+                }
+                .reg-left-img img {
+                    width: 140px;
+                    position: absolute;
+                    z-index: 999;
+                    top: 0;
+                    right: calc(40% - 70px);
+                }
+
+            .reg-right-img {
+                height: auto;
+                display: block;
+                align-items: end;
+                display: none;
+            }
+            .reg-right-img .img-right {
+                position: relative;
+                max-width: 450px;
+                width: 100%;                
+            }
+                .reg-right-img img {
+                    width: 110px;
+                    position: absolute;
+                    top: -36px;
+                    right: 10px;
+                }
+      }
+      #next:disabled {
+        opacity: 0.5 !important;
+      }
+      .iframe-loaded .cancel{
+        display: none !important;
+      }
+      .iframe-loaded .login-reg-page{
+        display: none !important;
+      }
+
+      .iframe-loaded .form-container-outer{
+        max-height: 730px;
+        overflow: auto;
+      }
+      .iframe-changepass .form-container-outer{
+        max-height: auto;
+      }
+      .iframe-loaded div[data-tenant-branding-background-color="true"] {
+        background: #ffffff !important;
+      }
+      .iframe-loaded .reg-form{
+        vertical-align: middle;
+      }
+      .iframe-loaded .self_asserted_container
+        .row
+        .panel-default
+        .panel-body
+        #api
+        #attributeVerification
+        .error {
+        margin-bottom: 0px !important;
+        font-size: 12px !important;
+      }
+      .iframe-loaded #background_branding_container img{
+        display: none;
+      }
+      .iframe-loaded .reg-form .img-left, .iframe-loaded .reg-form .img-right{
+        display: none;
+      }
+      .iframe-loaded .panel{
+        border: none;
+      }
+
+      .phone_li{
+        position: relative;
+      }
+      .send-otp-wrapper {
+        margin: 0;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* flex-flow: row wrap; */
+      }
+
+      .btn-send-otp {
+        height: 36px !important;
+        border-radius: 6px !important;
+        color: #fff !important;
+        margin-top: 0;
+        background: #3ca94a !important;
+        box-shadow: 0.69px 4px 15px #00000026;
+        opacity: 1;
+        border: none;
+        text-transform: uppercase;
+        padding: 10px;
+        position: absolute;
+        top: 9px;
+        right: 9px;
+        font-size: 12px;
+      }
+
+      .resend-otp {
+        color: #1457ef;
+        padding: 15px 0 0 0;
+        text-align: center;
+        margin: auto;
+      }
+
+      .btn-send-otp:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+
+      .error-otp{
+        color: #b00;
+        margin-top: 10px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .iframe-loaded .form-container-outer{
+          max-height: 100vh;
+          height: 100vh;
+          overflow: auto;
+        }
+        .iframe-changepass .form-container-outer{
+          max-height: auto;
+          height: auto;
+          overflow: auto;
+        }
+        .iframe-loaded .reg-form{
+          vertical-align: top;
+        }
+
+      }
+
+      #terms-modal .terms-modal-dialog {
+        overflow-y: initial !important
+      }
+
+      #terms-modal .modal-body{
+        height: 80vh;
+        overflow-y: auto;
+        width: 100%;
+        text-align: left;
+      }
+      
+      #terms-modal .modal-footer{
+        text-align: center;
+        padding: 0;
+      }
+
+      .termsNconditions_li #_option {
+        cursor: pointer;
+      }
+
+      #continue:disabled {
+        opacity: .5;
+        cursor: not-allowed;
+      }
+
+      #emailVerificationSSPRControlLoggedInUser_info_message {
+        display: block;
+      }
+
+    </style>
+
+<script type="text/javascript">
+  var key='';
+  var href=window.location.href;
+    if(href.indexOf("login.najbet.com") != -1){
+      //production
+      key = 'GTM-NKB2T59D';
+    }
+    else if(href.indexOf("login.seriea.fun") != -1){
+      //Staging
+      key = 'GTM-NLX52ZZ';
+    }
+    else if(href.indexOf("aposta1staging.b2clogin.com") != -1){
+      //localhost
+      key = 'GTM-NLX52ZZ';
+    }
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer', key);
+</script> 
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKB2T59D"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+ 
+        $(document).ready(function () {
+            $(".login-reg-page").hide();
+            var str = location.href;
+            if (str.indexOf("ForgotPasswordExchange") !== -1|| str.indexOf("confirmed") !== -1) {
+                document.getElementById("main-container").classList.add("forgot-password");
+            }
+            
+            else if (window.location.href.indexOf("https://login.najbet.com/najbetprod.onmicrosoft.com/b2c_1a_signup/") > -1) {
+              $(".login-reg-page").show();
+            }
+
+            hideContinueButtonForResetPassword();
+
+            setTimeout(
+              function(){
+                $("#newPassword").passwordRequirements({
+                  useSpecial: false,
+                  useNumbers : true,
+                  useUppercase: true,
+                  useLowercase: true
+                });
+              }, 4000
+            );
+
+           
+            $('#continue').click(function(event) { 
+                console.log('phone check');
+                if (typeof libphonenumber !== 'undefined' && typeof libphonenumber.PhoneNumberUtil !== 'undefined') {
+                    const phoneUtil = libphonenumber.PhoneNumberUtil.getInstance();
+                    const phoneNumber = phoneUtil.parseAndKeepRawInput($("#phone").val(), 'NG');
+                    const isValid = phoneUtil.isValidNumber(phoneNumber);
+                    
+                  if (!isValid) {
+                    $('.phone_li .attrEntry .error').text("Invalid phone number.");
+                    $('.phone_li .attrEntry .error').addClass("show");
+                    event.preventDefault();
+                  } else {
+                    $('.phone_li .attrEntry .error').text("");
+                    $('.phone_li .attrEntry .error').removeClass("show");
+                    event.preventDefault();
+                  }
+                    //console.log('phoneUtil', phoneUtil);
+                    //console.log('phoneNumber', phoneNumber);
+                    //console.log('isValid', isValid);
+                } else {
+                    console.error('libphonenumber library not loaded.');
+                }
+            });
+        });
+       
+        
+        
+        // #region Continue Button Reset flow
+      function hideContinueButtonForResetPassword() {
+        if (window.location.href.includes("claimsexchange=ForgotPasswordExchange")) {
+        
+          var continueButton = $("#continue");
+          continueButton.hide();
+
+          $("#email_ver_but_verify").click(function(){
+            
+            waitUntilEmailVerified(continueButton);
+          });    
+
+        }
+      };
+
+
+       document.getElementById("emailVerificationSSPRControl_but_change_claims")?.addEventListener("click", function() {
+           setTimeout(
+             function(){
+               hideContinueButtonForResetPassword();
+             }, 200
+           );
+          
+
+         });
+      // document.getElementById("emailVerificationSSPRControl_but_change_claims").addEventListener("click", function() {
+      //     setTimeout(function() {
+      //         $("#continue").hide();
+      //     }, 200);
+      // });
+      function goBack() {
+        
+        if (!window.location.href.includes("claimsexchange=ForgotPasswordExchange")){
+          // NOTE: selfAsserted.html is used for registration and reset password.          
+          // Track only registrations
+          if ('analytics' in window) {
+            analytics?.track('Left registration page', {});
+          }
+        }
+
+        const previousDomain =
+          document.referrer && document.referrer.split("/").length > 2
+            ? document.referrer.split("/")[2]
+            : null;
+        const currentDomain = $(location).attr("hostname");
+
+        // Go back only if the previous domain and current domain are the same but different subdomain.
+        let shouldGoBackThroughBrowser = false;
+        if (
+          previousDomain &&
+          currentDomain &&
+          currentDomain != previousDomain
+        ) {
+          const previousDomainName =
+            previousDomain.split(".").length > 2
+              ? previousDomain.split(".")[1]
+              : null;
+          const currentDomainName =
+            currentDomain.split(".").length > 2
+              ? currentDomain.split(".")[1]
+              : null;
+
+          if (
+            currentDomainName &&
+            previousDomain &&
+            currentDomainName == previousDomainName
+          ) {
+            shouldGoBackThroughBrowser = true;
+          }
+        }
+
+        if (shouldGoBackThroughBrowser) {
+          window.history.back(-1);
+        } else {
+          const goBackUrl =
+            $(location).attr("protocol") +
+            "//" +
+            $(location)
+              .attr("hostname")
+              .replace("login.", "www.")
+              .replace("account.", "www.");
+          window.location.href = goBackUrl;
+        }
+      }
+    </script>
+    
+    
+    <div
+      id="background_branding_container"
+      data-tenant-branding-background-color="true"
+    >
+      <img
+        data-tenant-branding-background="false"
+        src="https://rightstakes.github.io/azadb2c/najbet/content/background-patteren.svg"
+      />
+    </div>
+    <div class="container self_asserted_container" id="main-container" role="presentation">
+        <div class="row">
+            <div class="col-sm-3 reg-left-img">
+                <!-- <div class="img-left">
+                    <img class="" data-tenant-branding-logo="false" src="https://rightstakes.github.io/azadb2c/najbet/content/regstration-left-img2.png">
+                </div> -->
+            </div>
+            <div class="col-sm-6 form-container-outer">
+                <div class="panel panel-default">
+                    <div class="panel-body" >
+                        <img class="companyLogo companyLogo-desktop"
+                             data-tenant-branding-logo="false"
+                             src="https://rightstakes.github.io/azadb2c/najbet/content/najbet-Logo.svg" />
+                        <img class="companyLogo companyLogo-mobile"
+                             data-tenant-branding-logo="false"
+                             src="https://rightstakes.github.io/azadb2c/najbet/content/najbet-Logo.svg" />
+                        <div id="api"></div>
+                        <div class="login-reg-page" style="text-align: center; margin-top: 10px;">Do you already have an account? <a style="color: #E2A527;" href="https://www.najbet.com/login">Login</a></div>
+                    </div>
+                    <!-- <a id="cancel-registration"
+                       class="cancel"
+                       aria-label="Cancelar"
+                       formnovalidate=""
+                       onclick="goBack()">
+                        <img src="https://rightstakes.github.io/azadb2c/najbet/content/cancel.svg"
+                             alt="" />
+                    </a> -->
+                    <a id="cancel-registration"
+                       class="cancel"
+                       aria-label="Cancelar"
+                       formnovalidate=""
+                       href="https://www.najbet.com">
+                        <img src="https://rightstakes.github.io/azadb2c/najbet/content/cancel.svg"
+                             alt="" />
+                    </a>
+                    
+                    <!-- Modal to close popup -->
+                    <div class="modal fade" id="cancel-modal" role="dialog">
+                        <div class="modal-dialog-outer">
+                            <div class="modal-dialog">
+                                <div class="popup-outer">
+                                    <div class="cancel-popup-top-bg"></div>
+                                    <div class="cancel-content">
+                                        <div class="cancel-text-container">
+                                            <h2>Hey, Wait!</h2>
+                                            <h4>Sure! Do you want to cancel the registration?</h4>
+                                        </div>
+                                        <div class="continue-btn-outer">
+                                            <button data-dismiss="modal" class="continue-btn">
+                                              No, Continue
+                                            </button>
+                                        </div>
+                                        <div class="take-me-out">
+                                            <a href="https://www.najbet.com/">Yes, Exit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms and conditions modal -->
+                    <div class="modal fade" id="terms-modal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-lg terms-modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-body" id="terms-modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <div class="continue-btn-outer">
+                              <button data-dismiss="modal" class="continue-btn">
+                                Close
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-sm-3 reg-right-img">
+                <!-- <div class="img-right">
+                    <img class="" data-tenant-branding-logo="false" src="https://rightstakes.github.io/azadb2c/najbet/content/registration-right-img-big.png">
+                </div> -->
+            </div>
+        </div>
+      
+    </div>
+    <script
+      defer
+      src="https://rightstakes.github.io/azadb2c/najbet/content/custom.js"
+    ></script>
+    <script src="https://rightstakes.github.io/azadb2c/najbet/content/showhide-password.js"></script>    
+    
+   
+  </body>
+</html>
