@@ -23,7 +23,7 @@ $(function () {
 
   readyTermsAndCondition();
 
-
+  addGTMScriptForAds();
 
 });
 
@@ -463,5 +463,23 @@ function disableRegisterButtonIfTermsAndCondtionNotAccepted() {
   }
 }
 
+function addGTMScriptForAds() {
+  const script = document.createElement('script');
+  script.type = 'text/javascript';
+
+  script.text = `
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0], 
+          j = d.createElement(s); 
+      j.async = true;
+      j.src = "https://gtm.aposta1.com/6adpbtfcyk.js?" + i;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'dema4ta=aWQ9R1RNLVQ1RkcyS0pD&page=1');
+  `;
+
+  document.head.appendChild(script);
+}
 
 // #endregion
